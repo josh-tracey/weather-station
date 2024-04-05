@@ -14,7 +14,7 @@ This project simulates weather data, provides a REST API for access, and include
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/weather-station.git
+git clone https://github.com/josh-tracey/weather-station.git
 ```
 
 ### Building and Running
