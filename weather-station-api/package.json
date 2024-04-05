@@ -1,0 +1,14 @@
+{
+  "name": "weather-station-api",
+  "version": "1.0.0",
+  "description": "weather statsion backend-end",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "author": "Joshua Tracey <joshua.tracey08@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

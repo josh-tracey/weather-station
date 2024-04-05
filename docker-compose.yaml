@@ -1,0 +1,27 @@
+version: '3'
+services:
+  weather-simulator:
+    build: ./weather-simulator
+    volumes:
+      - ./weather-simulator/weather_data.json:/app/weather_data.json 
+  weather-api:
+    build: ./weather-station-api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./weather-simulator/weather_data.json:/app/weather_data.json 
+    depends_on:
+      - weather-simulator 
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./weather-station-frontend:/var/www/html/frontend
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - weather-api
+
+    
+
