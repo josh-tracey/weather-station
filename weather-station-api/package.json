@@ -9,6 +9,6 @@
   "author": "Joshua Tracey <joshua.tracey08@gmail.com>",
   "license": "UNLICENSED",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.20.0"
   }
 }
